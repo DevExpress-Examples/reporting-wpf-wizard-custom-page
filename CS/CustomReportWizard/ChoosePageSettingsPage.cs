@@ -5,6 +5,7 @@ using System.Drawing.Printing;
 using System.Linq;
 using DevExpress.Data.WizardFramework;
 using DevExpress.DataAccess.Wizard.Presenters;
+using DevExpress.Drawing.Printing;
 using DevExpress.Mvvm.DataAnnotations;
 using DevExpress.XtraReports.Wizards;
 
@@ -36,7 +37,7 @@ namespace CustomReportWizard {
     }
 
     interface IChoosePageSettingsPageView {
-        PaperKind PaperKind { get; set; }
+        DXPaperKind PaperKind { get; set; }
         bool Portrait { get; set; }
         Margins PageMargins { get; set; }
     }
@@ -60,8 +61,8 @@ namespace CustomReportWizard {
         [Range(0, 300)]
         public virtual int BottomMargin { get; set; }
 
-        PaperKind IChoosePageSettingsPageView.PaperKind {
-            get { return (PaperKind)SelectedPaperKind.Id; }
+        DXPaperKind IChoosePageSettingsPageView.PaperKind {
+            get { return (DXPaperKind)SelectedPaperKind.Id; }
             set { SetPaperKind(value); }
         }
         Margins IChoosePageSettingsPageView.PageMargins {
@@ -79,9 +80,9 @@ namespace CustomReportWizard {
             }).ToArray();
         }
 
-        void SetPaperKind(PaperKind value) {
-            var info = AvailablePaperKinds.SingleOrDefault(x => (PaperKind)x.Id == value)
-                ?? AvailablePaperKinds.Single(x => (PaperKind)x.Id == PaperKind.Letter);
+        void SetPaperKind(DXPaperKind value) {
+            var info = AvailablePaperKinds.SingleOrDefault(x => (DXPaperKind)x.Id == value)
+                ?? AvailablePaperKinds.Single(x => (DXPaperKind)x.Id == DXPaperKind.Letter);
             SelectedPaperKind = info;
         }
 

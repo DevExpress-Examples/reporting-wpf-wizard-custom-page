@@ -1,13 +1,13 @@
-﻿using DevExpress.XtraReports.Wizards;
+﻿using DevExpress.Drawing.Printing;
+using DevExpress.XtraReports.Wizards;
 using System.Drawing.Printing;
 
 namespace CustomReportWizard {
     class CustomReportModel : XtraReportModel {
-        public PaperKind PaperKind { get; set; }
         public Margins PageMargins { get; set; }
 
         public CustomReportModel() {
-            PaperKind = PaperKind.Letter;
+            PaperKind = DXPaperKind.Letter;
             PageMargins = new Margins(100, 100, 100, 100);
         }
         public CustomReportModel(CustomReportModel model) : base(model) {
