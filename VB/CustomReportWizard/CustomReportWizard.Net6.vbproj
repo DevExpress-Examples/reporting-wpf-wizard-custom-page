@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>CustomReportWizard</AssemblyName>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <Platforms>x86;AnyCPU</Platforms>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MetaSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ad85136da8f25b14, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Charts" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Charts.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.CodeParser" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Data" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Data.Desktop" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.DataAccess" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Diagram.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Gauges.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Images" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Mvvm" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Office.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.PivotGrid.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Printing.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Reporting.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.RichEdit.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Sparkline.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Controls" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Diagram" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Docking" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.DocumentViewer.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.ExpressionEditor" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Grid.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.LayoutControl" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Office" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.PivotGrid" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Printing" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.PropertyGrid" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Reporting" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Ribbon" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.RichEdit" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="23.1.*-*" />
+  </ItemGroup>
+</Project>
