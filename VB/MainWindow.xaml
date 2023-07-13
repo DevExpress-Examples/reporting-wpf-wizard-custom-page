@@ -1,0 +1,17 @@
+<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:CustomReportWizard"
+        xmlns:dxrud="http://schemas.devexpress.com/winfx/2008/xaml/reports/userdesigner" 
+        xmlns:dxrudw="http://schemas.devexpress.com/winfx/2008/xaml/reports/userdesigner/wizard"
+        xmlns:dxda="http://schemas.devexpress.com/winfx/2008/xaml/dataaccess"
+        x:Class="CustomReportWizard.MainWindow" WindowState="Maximized"
+        Title="MainWindow" >
+    <Grid>
+        <dxrud:ReportDesigner>
+            <dxrud:ReportDesigner.ServicesRegistry>
+                <dxda:TypeEntry ServiceType="{x:Type dxrudw:IWizardCustomizationService}" ConcreteType="{x:Type local:WizardCustomizationService}" />
+            </dxrud:ReportDesigner.ServicesRegistry>
+        </dxrud:ReportDesigner>
+    </Grid>
+</Window>
