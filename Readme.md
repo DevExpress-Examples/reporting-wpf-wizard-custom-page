@@ -33,7 +33,7 @@ To accomplish this task, perform the following steps:
 * [WPF Report Designer - How to customize the list of data providers in the Data Source Wizard](https://github.com/DevExpress-Examples/reporting-wpf-designer-data-provider-list)
 
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-wpf-wizard-custom-page&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-wpf-wizard-custom-page&~~~was_helpful=no)
 
